@@ -2,39 +2,31 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>For Nann Ohnmar Wai</title>
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-  <div class="hearts"></div>
 
-  <div class="container">
+  <div id="floats"></div>
+
+  <main class="container">
     <h1>For Nann Ohnmar Wai 💖</h1>
-    <p class="intro">This isn’t just a webpage — it’s a whisper of my heart, shaped in code.</p>
-
-    <button class="button" onclick="showMessage()">Click to Reveal</button>
-
-    <div class="message" id="hiddenMessage">
+    <p class="intro">This isn't just a page. It's a piece of my heart rendered for you.</p>
+    <button id="revealBtn">Reveal My Heart</button>
+    <section id="message" class="message" aria-hidden="true">
       <h2>Dear Nann Ohnmar Wai,</h2>
-      <p>
-        You’re the gentle light in the shadows of my day. This small space exists to tell you:
-        someone thinks of you with genuine admiration.
-      </p>
-      <p>
-        I didn’t create this to impress you — I created it because you already impressed something
-        unforgettable on my heart.
-      </p>
-      <p>— Shin Myat Tun</p>
-    </div>
-  </div>
+      <p>You are the calm in my storm, the melody my soul hums quietly…</p>
+      <p>This space, simple as it is, holds something real: my deep admiration for you.</p>
+      <p class="signature">— Shin Myat Tun</p>
+    </section>
+  </main>
+
+  <button id="musicToggle" aria-label="Toggle music">🔈</button>
+  <audio id="bgMusic" loop preload="auto" src="https://cdn.pixabay.com/audio/2023/05/26/audio_95c6a1e87f.mp3"></audio>
 
   <footer>© Made with love by Shin Myat Tun</footer>
-
-  <audio autoplay loop>
-    <source src="https://cdn.pixabay.com/download/audio/2023/03/27/audio_c0115cebc2.mp3?filename=romantic-piano-144998.mp3" type="audio/mpeg">
-  </audio>
-
   <script src="js/script.js"></script>
+
 </body>
 </html>
